@@ -2,30 +2,47 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <div style="background-color:cyan;">
-    <form method="POST">
-    <label for="f_name" style="color:rgb(255, 0, 0);"><b>First Name</b></label><br>
-    <input type="text" name="name" id="f_name" style="color: blue;"><br><br>
-
-    <label for="m_name" style="color: blueviolet;"><b>Middle Name</b></label><br>
-    <input type="text" name="name" id="m_name"><br><br>
-    
-    <label for="l_name" style="color:salmon;"><b>Last Name</b></label><br>
-    <input type="text" name="name" id="l_name"><br><br>
-
-    <label for="email" style="color: sienna;"><b>Email</b></label><br>
-    <input type="email" name="Email" id="email"><br><br>
-    <label for="password" style="color: darkblue;"><b>Password</b></label><br>
-    <input type="password" name="pass" id="password"><br><br>
-
-    <label for="upload" style="color: orangered;"><b>Upload ID proof</b></label><br>
-    <input type="file" name="file" id="upload"><br><br><br>
-    
-    <input type="submit" value="Submit">
-    
-    </form>
-    </body>
+    <table>
+        <thead>
+            <tr>
+                <th>State of Health</th>
+                <th colspan="2">Fasting value</th>
+                <!-- <th>val</th> -->
+                <th>After Remaining</tr>
+            </tr>
+            <tr>
+                <th></th>
+                <th>Minimum</th>
+                <th>Normal</th>
+                <th>2 hours of Eating</tr>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>healthy</td>
+                <td>70</td>
+                <td>100</td>
+                <td>Less than 140</td>
+            </tr>
+            <tr>
+                <td>Pre-Diabetes</td>
+                <td>101</td>
+                <td>126</td>
+                <td>140-200</td>
+            </tr>
+            <tr>
+                <td>Diabetes</td>
+                <td>more than 126</td>
+                <td>Not Applicable</td>
+                <td>More than 200</td>
+            </tr>
+        </tbody>
+    </table>
+  
+</body>
 </html>
